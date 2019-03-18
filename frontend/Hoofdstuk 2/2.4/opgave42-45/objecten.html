@@ -1,0 +1,30 @@
+<DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UFT-8">
+    <title> Arrays methodes</title>
+  </head>
+    <body>
+      <script>
+      var laptop = [];
+      laptop['macbook'] =
+      {'model':'air', 'voorraad': 2000,'prijs': 1090};
+      document.write('<br>Opgave 42: laptops array aangemaakt');
+      laptop['asusbook'] =
+      {'model':'wind', 'voorraad': 1000,'prijs': 990};
+      laptop['dellbook'] =
+      {'model':'fire', 'voorraad': 987,'prijs': 890};
+      document.write('<br>Opgave 43: laptops array uitgebreid');
+      document.write('<br>Opgave 44: de laptops array heeft' +
+      laptop.length + ' elementen');
+      document.write('<br>Opgave 45: de variabele mac is: '+ mac);
+      var mac = 'macbook' in laptop;
+      var asus = 'asusbook' in laptop;
+      var dell = 'dellbook' in laptop;
+      document.write('<br>Mac specificaties -------' +
+      '<br>Model: ' +laptop['macbook']['model'] +
+      '<br>Voorraad: ' +laptop['macbook']['voorraad'] +
+      '<br>Prijs: ' + laptop['macbook']['prijs']);
+      </script>
+    </body>
+  </html>
