@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mijn functies</title>
+    <script src="mijnfunctions.js"></script>
+    <script>
+            function verdubbel (inputgetal) {
+                outputgetal = inputgetal * 2;
+                return(outputgetal);
+            }
+    </script>
+</head>
+<body>
+    <script>
+        /*mijngetal = prompt('typ een getal in');
+        resultaat = verdubbel(mijngetal);
+        document.write('<br>Input-getal:' + mijngetal);
+        document.write('<br>Output-getal:' + resultaat);
+        document.write('<br>');
+
+        function afmelden() {
+            var antwoord = confirm('wilt u zich afmelden');
+            if (antwoord == true) {
+                alert('u wordt afgemeld!!!');
+            }
+        }
+        afmelden();
+        document.write('<br>');*/
+
+        function dollarKkoers() {
+            return(1.36);
+        }
+        document.write('<br>de dollarkoers is: ' + dollarKkoers());
+
+        function euroKoers() {
+            return(0.74);
+        }
+        document.write('<br>de eurokoers is: ' + euroKoers());
+        document.write('<br>');
+
+        function dollar_naar_euro(dollars) {
+            return(dollars * euroKoers);
+        }
+        document.write('100 dollar is: ' + dollar_naar_euro(100) + 'euro\'s');
+        document.write('<br>');
+
+        function wissel(bedrag, valuta) {
+            if (valuta == 'euro') {
+                return(bedrag * euroKoers());
+            } else if (valuta == 'dollar') {
+                return(bedrag * euroKoers());
+            }
+        }
+        document.write('wissel 100 euro\'s in dollars: ' + wissel(100, 'euro'));
+        document.write('<br>wissel 20 dollars in euro\'s: ' + wissel(20, 'dollar'));
+        document.write('<br>');
+
+
+
+    </script>
+     <form name='form'>
+        <input type="text" name="bedrag" placeholder="bedrag">
+        <input type="button" value="converteren" onclick="document.write('conversie in euros: ' + dollar_naar_euro(document.form.bedrag.value))">
+    </form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>for in lus</title>
+    </head>
+<body>
+    <script>
+        var laptops = [];
+        laptops['macbook'] = {'model': 'air', 'voorraad': 2000, 'prijs': 1090};
+        laptops['asusbook'] = {'model': 'wind', 'voorraad': 1000, 'prijs': 990};
+        laptops['dellbook'] = {'model': 'fire', 'voorraad': 987, 'prijs': 890};
+        for (var merk in laptops) {
+            document.write('<br>merk: ' + merk);
+        }
+        document.write('<br>');
+
+        for(var property in laptops[merk]) {
+            document.write('<br>' + property+ ': ' + laptops[merk][property]);
+        }
+    </script>
+</body>
+</html>
